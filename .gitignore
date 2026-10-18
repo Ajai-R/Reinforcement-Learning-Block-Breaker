@@ -1,0 +1,48 @@
+# Node & Web Build
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Python artifacts & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+Fast_gpu/
+*.egg-info/
+.eggs/
+
+# Checkpoints & Model weights binaries
+*.pth
+*.pt
+checkpoints/
+training/checkpoints/
+agents/**/checkpoints/*.pth
+
+# Office & Presentation files (kept local)
+*.docx
+*.pptx
+~$*
+ppt_slides_preview/
+report_figures/
+template_media/
+breakout_media/
+Slide11_Training_Dynamics_and_Convergence.png
+Slide12_Comparative_Benchmark_and_Weight_Drift.png
+
+# Empty folders & local logs
+logs/
+scratch/
+.system_generated/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
