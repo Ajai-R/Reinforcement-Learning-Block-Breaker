@@ -20,9 +20,12 @@ Fast_gpu/
 # Checkpoints & Model weights binaries
 *.pth
 *.pt
-checkpoints/
+/checkpoints/
 training/checkpoints/
-agents/**/checkpoints/*.pth
+
+# Allow evaluation reports and training text logs
+!agents/**/logs/*.txt
+!agents/**/checkpoints/*.txt
 
 # Office & Presentation files (kept local)
 *.docx
@@ -35,8 +38,8 @@ breakout_media/
 Slide11_Training_Dynamics_and_Convergence.png
 Slide12_Comparative_Benchmark_and_Weight_Drift.png
 
-# Empty folders & local logs
-logs/
+# Empty root folders & scratch
+/logs/
 scratch/
 .system_generated/
 
