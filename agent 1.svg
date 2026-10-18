@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 726.4569999999999 863.6999999999998" width="726.4569999999999" height="863.6999999999998" style="--bg:#1F1F1F;--fg:#CCCCCC;--line:#CCCCCC;--accent:#0078D4;--muted:#CCCCCCCC;--surface:#181818;--border:#CCCCCC;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="KinInput" data-to="KinLayer1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="180.6465,93.80000000000001 180.6465,141.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="KinLayer1" data-to="KinLayer2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="180.6465,178.70000000000002 180.6465,226.70000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="BrickInput" data-to="BrickLayer1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="464.74549999999994,93.80000000000001 464.74549999999994,141.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="BrickLayer1" data-to="BrickLayer2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="464.74549999999994,178.70000000000002 464.74549999999994,226.70000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="KinLayer2" data-to="Concat" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="180.6465,263.6 180.6465,291.82500000000005 322.69599999999997,291.82500000000005 322.69599999999997,320.05000000000007" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="BrickLayer2" data-to="Concat" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="464.74549999999994,263.6 464.74549999999994,291.82500000000005 322.69599999999997,291.82500000000005 322.69599999999997,320.05000000000007" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Concat" data-to="ValDense" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="322.69599999999997,373.8500000000001 322.69599999999997,393.62500000000006 170.64299999999997,393.62500000000006 170.64299999999997,413.40000000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ValDense" data-to="ValOut" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="170.64299999999997,450.3 170.64299999999997,498.3" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Concat" data-to="AdvDense" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="322.69599999999997,373.8500000000001 322.69599999999997,393.62500000000006 474.74899999999997,393.62500000000006 474.74899999999997,413.40000000000003" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="AdvDense" data-to="AdvOut" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="474.74899999999997,450.3 474.74899999999997,498.3" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ValOut" data-to="QFormula" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="170.64299999999997,535.2 170.64299999999997,559.2 322.69599999999997,559.2 322.69599999999997,583.1999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="AdvOut" data-to="QFormula" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="474.74899999999997,535.2 474.74899999999997,559.2 322.69599999999997,559.2 322.69599999999997,583.1999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="QFormula" data-to="QValues" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="322.69599999999997,636.9999999999999 322.69599999999997,684.9999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="QValues" data-to="Decision" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="322.69599999999997,721.8999999999999 322.69599999999997,769.8999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="KinInput" data-label="Kinematics Input (6 features)
+Paddle &amp; Ball X/Y, Velocities, Brick Ratio" data-shape="rectangle">
+  <rect x="43.70500000000004" y="40" width="273.8829999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="180.6465" y="66.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="180.6465" dy="-3.9000000000000012">Kinematics Input (6 features)</tspan><tspan x="180.6465" dy="16.900000000000002">Paddle &amp; Ball X/Y, Velocities, Brick Ratio</tspan></text>
+</g>
+<g class="node" data-id="BrickInput" data-label="Bricks Input (128 features)
+Flattened 8×16 Grid of Brick States" data-shape="rectangle">
+  <rect x="345.58799999999997" y="40" width="238.31499999999994" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="464.74549999999994" y="66.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="464.74549999999994" dy="-3.9000000000000012">Bricks Input (128 features)</tspan><tspan x="464.74549999999994" dy="16.900000000000002">Flattened 8×16 Grid of Brick States</tspan></text>
+</g>
+<g class="node" data-id="KinLayer1" data-label="Dense 1: Linear(6 → 128) + ReLU" data-shape="rectangle">
+  <rect x="70.0105" y="141.8" width="221.272" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="180.6465" y="160.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Dense 1: Linear(6 → 128) + ReLU</text>
+</g>
+<g class="node" data-id="KinLayer2" data-label="Dense 2: Linear(128 → 128) + ReLU" data-shape="rectangle">
+  <rect x="62.60050000000001" y="226.70000000000002" width="236.09199999999998" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="180.6465" y="245.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Dense 2: Linear(128 → 128) + ReLU</text>
+</g>
+<g class="node" data-id="BrickLayer1" data-label="Dense 1: Linear(128 → 64) + ReLU" data-shape="rectangle">
+  <rect x="350.4044999999999" y="141.8" width="228.682" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="464.74549999999994" y="160.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Dense 1: Linear(128 → 64) + ReLU</text>
+</g>
+<g class="node" data-id="BrickLayer2" data-label="Dense 2: Linear(64 → 32) + ReLU" data-shape="rectangle">
+  <rect x="349.66349999999994" y="226.70000000000002" width="230.164" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="464.74549999999994" y="245.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Dense 2: Linear(64 → 32) + ReLU</text>
+</g>
+<g class="node" data-id="Concat" data-label="Concatenation (torch.cat)
+128 + 32 = 160 Combined Features" data-shape="rectangle">
+  <rect x="206.13199999999998" y="320.05000000000007" width="233.128" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="322.69599999999997" y="346.95000000000005" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="322.69599999999997" dy="-3.9000000000000012">Concatenation (torch.cat)</tspan><tspan x="322.69599999999997" dy="16.900000000000002">128 + 32 = 160 Combined Features</tspan></text>
+</g>
+<g class="node" data-id="ValDense" data-label="Value Layer: Linear(160 → 128) + ReLU" data-shape="rectangle">
+  <rect x="40" y="413.40000000000003" width="261.28599999999994" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="170.64299999999997" y="431.85" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Value Layer: Linear(160 → 128) + ReLU</text>
+</g>
+<g class="node" data-id="ValOut" data-label="Scalar Value: Linear(128 → 1) → V(s)" data-shape="rectangle">
+  <rect x="51.115" y="498.3" width="239.05599999999995" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="170.64299999999997" y="516.75" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Scalar Value: Linear(128 → 1) → V(s)</text>
+</g>
+<g class="node" data-id="AdvDense" data-label="Advantage Layer: Linear(160 → 128) + ReLU" data-shape="rectangle">
+  <rect x="329.28599999999994" y="413.40000000000003" width="290.92600000000004" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="474.74899999999997" y="431.85" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Advantage Layer: Linear(160 → 128) + ReLU</text>
+</g>
+<g class="node" data-id="AdvOut" data-label="Advantage Vector: Linear(128 → 3) → A(s, a)" data-shape="rectangle">
+  <rect x="331.87949999999995" y="498.3" width="285.73900000000003" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="474.74899999999997" y="516.75" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Advantage Vector: Linear(128 → 3) → A(s, a)</text>
+</g>
+<g class="node" data-id="QFormula" data-label="Dueling Aggregation
+Q(s, a) = V(s) + (A(s, a) - mean(A))" data-shape="rectangle">
+  <rect x="210.20749999999998" y="583.1999999999999" width="224.97699999999998" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="322.69599999999997" y="610.0999999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="322.69599999999997" dy="-3.9000000000000012">Dueling Aggregation</tspan><tspan x="322.69599999999997" dy="16.900000000000002">Q(s, a) = V(s) + (A(s, a) - mean(A))</tspan></text>
+</g>
+<g class="node" data-id="QValues" data-label="&quot;3 Q-Values: [Q_LEFT, Q_STAY, Q_RIGHT" data-shape="rectangle">
+  <rect x="179.0855" y="684.9999999999999" width="287.22099999999995" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="322.69599999999997" y="703.4499999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">&quot;3 Q-Values: [Q_LEFT, Q_STAY, Q_RIGHT</text>
+</g>
+<g class="node" data-id="Decision" data-label="ArgMax Action Selection
+0: LEFT | 1: STAY | 2: RIGHT" data-shape="rectangle">
+  <rect x="222.8045" y="769.8999999999999" width="199.78299999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="322.69599999999997" y="796.7999999999998" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="322.69599999999997" dy="-3.9000000000000012">ArgMax Action Selection</tspan><tspan x="322.69599999999997" dy="16.900000000000002">0: LEFT | 1: STAY | 2: RIGHT</tspan></text>
+</g>
+</svg>
