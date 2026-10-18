@@ -1,0 +1,430 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 1040" width="1680" height="1040" style="background:#FFFFFF;">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap');
+      text { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+    
+    <filter id="card-shadow" x="-4%" y="-3%" width="108%" height="110%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06" />
+    </filter>
+
+    <marker id="arrow-sky" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#0284c7" />
+    </marker>
+    <marker id="arrow-indigo" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#6366f1" />
+    </marker>
+    <marker id="arrow-teal" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="#0d9488" />
+    </marker>
+    
+    <linearGradient id="grad-col1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F0F9FF" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+    <linearGradient id="grad-col2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EEF2FF" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+    <linearGradient id="grad-col3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F0FDFA" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1680" height="1040" fill="#FFFFFF" />
+
+  <!-- HEADER -->
+  <g transform="translate(840, 26)" text-anchor="middle">
+    <text y="28" font-size="24" font-weight="800" fill="#0F172A" letter-spacing="-0.5">
+      End-to-End System Architecture: 100% Simulation Parity &amp; Zero-Dependency Web Deployment
+    </text>
+    <text y="52" font-size="13.5" font-weight="500" fill="#64748B">
+      Unified dataflow across JavaScript game physics, headless Node.js training bridge, PyTorch Deep RL, and in-browser inference runtime
+    </text>
+  </g>
+
+  <!-- COLUMN 1: SIMULATION & BRIDGE (X: 40, W: 460) -->
+  <g transform="translate(40, 95)">
+    <rect x="0" y="0" width="460" height="790" rx="16" fill="url(#grad-col1)" stroke="#BAE6FD" stroke-width="1.5" />
+    
+    <!-- Column Title -->
+    <rect x="18" y="16" width="90" height="22" rx="6" fill="#0284C7" />
+    <text x="63" y="31" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">PHASE 1</text>
+    <text x="118" y="32" font-size="16" font-weight="700" fill="#0369A1">Simulation &amp; Bridge</text>
+    <rect x="325" y="16" width="118" height="22" rx="11" fill="#E0F2FE" stroke="#7DD3FC" stroke-width="1" />
+    <text x="384" y="31" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0284C7">100% SIM PARITY</text>
+
+    <!-- Card 1A: JavaScript Game Physics Engine -->
+    <g transform="translate(20, 56)">
+      <rect x="0" y="0" width="420" height="195" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)" />
+      <path d="M 0 12 A 12 12 0 0 1 12 0 L 408 0 A 12 12 0 0 1 420 12 L 420 6 L 0 6 Z" fill="#0284C7" />
+      
+      <text x="18" y="30" font-size="14" font-weight="700" fill="#0F172A">JavaScript Game Physics Engine</text>
+      
+      <rect x="18" y="42" width="235" height="20" rx="5" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+      <text x="24" y="56" font-size="10" font-weight="600" fill="#334155" class="mono">frontend/src/engine/rlEnvironment.js</text>
+      <rect x="260" y="42" width="142" height="20" rx="5" fill="#E0F2FE" />
+      <text x="331" y="56" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0284C7">Core Physics Engine</text>
+
+      <circle cx="26" cy="80" r="3" fill="#0284C7" />
+      <text x="36" y="84" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Continuous Collision (CCD):</tspan> 4 sub-steps per frame</text>
+
+      <circle cx="26" cy="104" r="3" fill="#0284C7" />
+      <text x="36" y="108" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Minkowski Circle-to-AABB:</tspan> Robust tunnel prevention</text>
+
+      <circle cx="26" cy="128" r="3" fill="#0284C7" />
+      <text x="36" y="132" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Arcade Layout:</tspan> 88 breakable bricks (8 rows × 16 cols)</text>
+
+      <circle cx="26" cy="152" r="3" fill="#0284C7" />
+      <text x="36" y="156" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Angle Mechanics:</tspan> Dynamic paddle surface reflection</text>
+
+      <circle cx="26" cy="176" r="3" fill="#0284C7" />
+      <text x="36" y="180" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Discrete Controls:</tspan> 3 Actions [0: Stay, 1: Left, 2: Right]</text>
+    </g>
+
+    <!-- Connector 1A -> 1B -->
+    <g transform="translate(230, 251)">
+      <line x1="0" y1="0" x2="0" y2="46" stroke="#0284C7" stroke-width="2" marker-end="url(#arrow-sky)" />
+      <rect x="-85" y="12" width="170" height="20" rx="10" fill="#E0F2FE" stroke="#BAE6FD" stroke-width="1" />
+      <text x="0" y="26" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0369A1">Subprocess Stdio Stream</text>
+    </g>
+
+    <!-- Card 1B: Headless Node.js Runner -->
+    <g transform="translate(20, 302)">
+      <rect x="0" y="0" width="420" height="190" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)" />
+      <path d="M 0 12 A 12 12 0 0 1 12 0 L 408 0 A 12 12 0 0 1 420 12 L 420 6 L 0 6 Z" fill="#0EA5E9" />
+      
+      <text x="18" y="30" font-size="14" font-weight="700" fill="#0F172A">Headless Node.js Runner</text>
+      
+      <rect x="18" y="42" width="220" height="20" rx="5" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+      <text x="24" y="56" font-size="10" font-weight="600" fill="#334155" class="mono">training/node_env_runner.js</text>
+      <rect x="246" y="42" width="156" height="20" rx="5" fill="#E0F2FE" />
+      <text x="324" y="56" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0284C7">Headless IPC Server</text>
+
+      <circle cx="26" cy="80" r="3" fill="#0EA5E9" />
+      <text x="36" y="84" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Line-Buffered Protocol:</tspan> JSON lines via stdin/stdout</text>
+
+      <circle cx="26" cy="104" r="3" fill="#0EA5E9" />
+      <text x="36" y="108" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Action Repeat:</tspan> Frame-skip = 4 physics sub-ticks</text>
+
+      <circle cx="26" cy="128" r="3" fill="#0EA5E9" />
+      <text x="36" y="132" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Reward Computation:</tspan> Continuous multi-term shaping</text>
+
+      <circle cx="26" cy="152" r="3" fill="#0EA5E9" />
+      <text x="36" y="156" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Zero Sim-Gap:</tspan> Runs the identical JS game engine</text>
+
+      <circle cx="26" cy="174" r="3" fill="#0EA5E9" />
+      <text x="36" y="178" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Throughput:</tspan> &gt; 1,800 steps/sec per headless process</text>
+    </g>
+
+    <!-- Connector 1B -> 1C -->
+    <g transform="translate(230, 492)">
+      <line x1="0" y1="0" x2="0" y2="46" stroke="#0284C7" stroke-width="2" marker-end="url(#arrow-sky)" />
+      <rect x="-80" y="12" width="160" height="20" rx="10" fill="#E0F2FE" stroke="#BAE6FD" stroke-width="1" />
+      <text x="0" y="26" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0369A1">JSON-IPC Messaging</text>
+    </g>
+
+    <!-- Card 1C: Python Gymnasium Environment Client -->
+    <g transform="translate(20, 543)">
+      <rect x="0" y="0" width="420" height="225" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)" />
+      <path d="M 0 12 A 12 12 0 0 1 12 0 L 408 0 A 12 12 0 0 1 420 12 L 420 6 L 0 6 Z" fill="#0284C7" />
+      
+      <text x="18" y="30" font-size="14" font-weight="700" fill="#0F172A">Python Gymnasium Client</text>
+      
+      <rect x="18" y="42" width="225" height="20" rx="5" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+      <text x="24" y="56" font-size="10" font-weight="600" fill="#334155" class="mono">training/environment_client.py</text>
+      <rect x="251" y="42" width="151" height="20" rx="5" fill="#E0F2FE" />
+      <text x="326" y="56" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0284C7">Gymnasium Adapter</text>
+
+      <circle cx="26" cy="80" r="3" fill="#0284C7" />
+      <text x="36" y="84" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Standard API:</tspan> reset() and step(action) methods</text>
+
+      <circle cx="26" cy="104" r="3" fill="#0284C7" />
+      <text x="36" y="108" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">134-D State Vector:</tspan> 6 Kinematic + 128 Spatial grid</text>
+
+      <circle cx="26" cy="128" r="3" fill="#0284C7" />
+      <text x="36" y="132" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Reward Shaping:</tspan> Catch (+12), Brick (+20), Clear (+500)</text>
+
+      <circle cx="26" cy="152" r="3" fill="#0284C7" />
+      <text x="36" y="156" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Ball Loss Penalty:</tspan> -12.0 on terminal drop</text>
+
+      <circle cx="26" cy="176" r="3" fill="#0284C7" />
+      <text x="36" y="180" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Proximity Bonus:</tspan> Continuous paddle-ball tracking</text>
+
+      <circle cx="26" cy="200" r="3" fill="#0284C7" />
+      <text x="36" y="204" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Batch Tensorization:</tspan> PyTorch float32 on CUDA GPU</text>
+    </g>
+  </g>
+
+  <!-- INTER-STAGE CONNECTOR 1 -> 2 (X: 500 to 610, Center: 555) -->
+  <g transform="translate(555, 460)">
+    <!-- State Flow Arrow (Right) -->
+    <path d="M -45 -18 L 45 -18" stroke="#6366F1" stroke-width="2.5" marker-end="url(#arrow-indigo)" />
+    <rect x="-52" y="-46" width="104" height="22" rx="11" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1.2" />
+    <text x="0" y="-31" text-anchor="middle" font-size="9" font-weight="700" fill="#4338CA">134D STATE (s)</text>
+
+    <!-- Action Feedback Arrow (Left) -->
+    <path d="M 45 35 L -45 35" stroke="#0284C7" stroke-width="2.5" marker-end="url(#arrow-sky)" />
+    <rect x="-52" y="46" width="104" height="22" rx="11" fill="#E0F2FE" stroke="#BAE6FD" stroke-width="1.2" />
+    <text x="0" y="61" text-anchor="middle" font-size="9" font-weight="700" fill="#0369A1">ACTION (a ∈ {0,1,2})</text>
+  </g>
+
+  <!-- COLUMN 2: DEEP RL TRAINING ENGINE (X: 610, W: 460) -->
+  <g transform="translate(610, 95)">
+    <rect x="0" y="0" width="460" height="790" rx="16" fill="url(#grad-col2)" stroke="#C7D2FE" stroke-width="1.5" />
+    
+    <rect x="18" y="16" width="90" height="22" rx="6" fill="#6366F1" />
+    <text x="63" y="31" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">PHASE 2</text>
+    <text x="118" y="32" font-size="16" font-weight="700" fill="#4338CA">Deep RL Training Core</text>
+    <rect x="315" y="16" width="128" height="22" rx="11" fill="#EEF2FF" stroke="#A5B4FC" stroke-width="1" />
+    <text x="379" y="31" text-anchor="middle" font-size="9.5" font-weight="600" fill="#4F46E5">PYTORCH + CUDA</text>
+
+    <!-- Card 2A: Replay Buffer -->
+    <g transform="translate(20, 56)">
+      <rect x="0" y="0" width="420" height="195" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)" />
+      <path d="M 0 12 A 12 12 0 0 1 12 0 L 408 0 A 12 12 0 0 1 420 12 L 420 6 L 0 6 Z" fill="#6366F1" />
+      
+      <text x="18" y="30" font-size="14" font-weight="700" fill="#0F172A">Experience Replay Buffer</text>
+      
+      <rect x="18" y="42" width="180" height="20" rx="5" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+      <text x="24" y="56" font-size="10" font-weight="600" fill="#334155" class="mono">training/replay_buffer.py</text>
+      <rect x="206" y="42" width="196" height="20" rx="5" fill="#EEF2FF" />
+      <text x="304" y="56" text-anchor="middle" font-size="9.5" font-weight="600" fill="#4F46E5">120k Capacity FIFO Buffer</text>
+
+      <circle cx="26" cy="80" r="3" fill="#6366F1" />
+      <text x="36" y="84" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Storage Structure:</tspan> (s_t, a_t, r_t, s_{t+1}, done) tuples</text>
+
+      <circle cx="26" cy="104" r="3" fill="#6366F1" />
+      <text x="36" y="108" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Mini-Batch Sampling:</tspan> Uniform random mini-batch (B = 64)</text>
+
+      <circle cx="26" cy="128" r="3" fill="#6366F1" />
+      <text x="36" y="132" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Warm-Up Phase:</tspan> 1,000 random exploration transitions</text>
+
+      <circle cx="26" cy="152" r="3" fill="#6366F1" />
+      <text x="36" y="156" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Decorrelation:</tspan> Breaks temporal correlation in trajectory</text>
+
+      <circle cx="26" cy="176" r="3" fill="#6366F1" />
+      <text x="36" y="180" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">GPU Pre-fetching:</tspan> Pinned memory async device transfer</text>
+    </g>
+
+    <!-- Connector 2A -> 2B -->
+    <g transform="translate(230, 251)">
+      <line x1="0" y1="0" x2="0" y2="46" stroke="#6366F1" stroke-width="2" marker-end="url(#arrow-indigo)" />
+      <rect x="-85" y="12" width="170" height="20" rx="10" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1" />
+      <text x="0" y="26" text-anchor="middle" font-size="9.5" font-weight="600" fill="#4338CA">Sample Batch (B = 64)</text>
+    </g>
+
+    <!-- Card 2B: Spatial-Dueling-DQN -->
+    <g transform="translate(20, 302)">
+      <rect x="0" y="0" width="420" height="190" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)" />
+      <path d="M 0 12 A 12 12 0 0 1 12 0 L 408 0 A 12 12 0 0 1 420 12 L 420 6 L 0 6 Z" fill="#8B5CF6" />
+      
+      <text x="18" y="30" font-size="14" font-weight="700" fill="#0F172A">Spatial-Dueling-DQN Network</text>
+      
+      <rect x="18" y="42" width="225" height="20" rx="5" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+      <text x="24" y="56" font-size="10" font-weight="600" fill="#334155" class="mono">agents/agent2_cnn_dqn/model.py</text>
+      <rect x="251" y="42" width="151" height="20" rx="5" fill="#EEF2FF" />
+      <text x="326" y="56" text-anchor="middle" font-size="9.5" font-weight="600" fill="#6D28D9">Dual-Stream Model</text>
+
+      <circle cx="26" cy="80" r="3" fill="#8B5CF6" />
+      <text x="36" y="84" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Spatial CNN Stream:</tspan> Reshape (128) → (3, 8, 16) Grid</text>
+
+      <circle cx="26" cy="104" r="3" fill="#8B5CF6" />
+      <text x="36" y="108" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Conv Pipeline:</tspan> Conv(3→32) → Conv(32→64) → Conv(64→64)</text>
+
+      <circle cx="26" cy="128" r="3" fill="#8B5CF6" />
+      <text x="36" y="132" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Kinematic Stream:</tspan> Linear(6→64) → Linear(64→64) + ReLU</text>
+
+      <circle cx="26" cy="152" r="3" fill="#8B5CF6" />
+      <text x="36" y="156" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Dueling Fusion:</tspan> Concat (128) → V(s) [1] &amp; A(s, a) [3]</text>
+
+      <circle cx="26" cy="174" r="3" fill="#8B5CF6" />
+      <text x="36" y="178" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Identifiability:</tspan> Q(s,a) = V(s) + (A(s,a) - mean(A))</text>
+    </g>
+
+    <!-- Connector 2B -> 2C -->
+    <g transform="translate(230, 492)">
+      <line x1="0" y1="0" x2="0" y2="46" stroke="#6366F1" stroke-width="2" marker-end="url(#arrow-indigo)" />
+      <rect x="-85" y="12" width="170" height="20" rx="10" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1" />
+      <text x="0" y="26" text-anchor="middle" font-size="9.5" font-weight="600" fill="#4338CA">Gradient Backprop / Weights</text>
+    </g>
+
+    <!-- Card 2C: Double DQN Training Loop & Exporter -->
+    <g transform="translate(20, 543)">
+      <rect x="0" y="0" width="420" height="225" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)" />
+      <path d="M 0 12 A 12 12 0 0 1 12 0 L 408 0 A 12 12 0 0 1 420 12 L 420 6 L 0 6 Z" fill="#6366F1" />
+      
+      <text x="18" y="30" font-size="14" font-weight="700" fill="#0F172A">Double DQN Loop &amp; Exporter</text>
+      
+      <rect x="18" y="42" width="220" height="20" rx="5" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+      <text x="24" y="56" font-size="10" font-weight="600" fill="#334155" class="mono">agents/agent2_cnn_dqn/train.py</text>
+      <rect x="246" y="42" width="156" height="20" rx="5" fill="#EEF2FF" />
+      <text x="324" y="56" text-anchor="middle" font-size="9.5" font-weight="600" fill="#4F46E5">Optimization Loop</text>
+
+      <circle cx="26" cy="80" r="3" fill="#6366F1" />
+      <text x="36" y="84" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Double DQN Target:</tspan> a* = argmax Q_online; Q_target(s', a*)</text>
+
+      <circle cx="26" cy="104" r="3" fill="#6366F1" />
+      <text x="36" y="108" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Target Net Decoupling:</tspan> Hard copy every 1,000 steps</text>
+
+      <circle cx="26" cy="128" r="3" fill="#6366F1" />
+      <text x="36" y="132" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Loss &amp; Optimizer:</tspan> Smooth L1 Huber Loss + Adam (α = 1e-4)</text>
+
+      <circle cx="26" cy="152" r="3" fill="#6366F1" />
+      <text x="36" y="156" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Exploration Decay:</tspan> Linear ε: 1.0 → 0.02 over 100k steps</text>
+
+      <circle cx="26" cy="176" r="3" fill="#6366F1" />
+      <text x="36" y="180" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Model Exporter:</tspan> Serializes model weights to JSON (~4.8MB)</text>
+
+      <circle cx="26" cy="200" r="3" fill="#6366F1" />
+      <text x="36" y="204" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">410k Parameters:</tspan> Conv filters, biases, linear heads</text>
+    </g>
+  </g>
+
+  <!-- INTER-STAGE CONNECTOR 2 -> 3 (X: 1070 to 1180, Center: 1125) -->
+  <g transform="translate(1125, 480)">
+    <path d="M -45 0 L 45 0" stroke="#0D9488" stroke-width="2.5" marker-end="url(#arrow-teal)" />
+    <rect x="-52" y="-34" width="104" height="22" rx="11" fill="#CCFBF1" stroke="#99F6E4" stroke-width="1.2" />
+    <text x="0" y="-19" text-anchor="middle" font-size="9" font-weight="700" fill="#0F766E">JSON WEIGHTS</text>
+
+    <rect x="-52" y="12" width="104" height="22" rx="11" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1.2" />
+    <text x="0" y="27" text-anchor="middle" font-size="9" font-weight="700" fill="#475569">~4.8 MB FLOAT32</text>
+  </g>
+
+  <!-- COLUMN 3: WEB DEPLOYMENT & INFERENCE (X: 1180, W: 460) -->
+  <g transform="translate(1180, 95)">
+    <rect x="0" y="0" width="460" height="790" rx="16" fill="url(#grad-col3)" stroke="#99F6E4" stroke-width="1.5" />
+    
+    <rect x="18" y="16" width="90" height="22" rx="6" fill="#0D9488" />
+    <text x="63" y="31" text-anchor="middle" font-size="11" font-weight="700" fill="#FFFFFF" letter-spacing="0.5">PHASE 3</text>
+    <text x="118" y="32" font-size="16" font-weight="700" fill="#0F766E">In-Browser Deployment</text>
+    <rect x="305" y="16" width="138" height="22" rx="11" fill="#CCFBF1" stroke="#5EEAD4" stroke-width="1" />
+    <text x="374" y="31" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0D9488">0-DEPENDENCY JS</text>
+
+    <!-- Card 3A: Pure JS Inference Runtime -->
+    <g transform="translate(20, 56)">
+      <rect x="0" y="0" width="420" height="195" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)" />
+      <path d="M 0 12 A 12 12 0 0 1 12 0 L 408 0 A 12 12 0 0 1 420 12 L 420 6 L 0 6 Z" fill="#0D9488" />
+      
+      <text x="18" y="30" font-size="14" font-weight="700" fill="#0F172A">Pure JS Inference Runtime</text>
+      
+      <rect x="18" y="42" width="215" height="20" rx="5" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+      <text x="24" y="56" font-size="10" font-weight="600" fill="#334155" class="mono">frontend/src/engine/dqnInference.js</text>
+      <rect x="241" y="42" width="161" height="20" rx="5" fill="#CCFBF1" />
+      <text x="321" y="56" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0D9488">Zero-Dependency Core</text>
+
+      <circle cx="26" cy="80" r="3" fill="#0D9488" />
+      <text x="36" y="84" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Zero Runtime Bloat:</tspan> No TensorFlow.js / No ONNX Web</text>
+
+      <circle cx="26" cy="104" r="3" fill="#0D9488" />
+      <text x="36" y="108" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Hand-Coded Conv2D:</tspan> Spatial feature extraction in pure JS</text>
+
+      <circle cx="26" cy="128" r="3" fill="#0D9488" />
+      <text x="36" y="132" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Pre-allocated Buffers:</tspan> Flat Float32Array (Zero GC pauses)</text>
+
+      <circle cx="26" cy="152" r="3" fill="#0D9488" />
+      <text x="36" y="156" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Ultra-Low Latency:</tspan> &lt; 0.8 ms inference per frame on CPU</text>
+
+      <circle cx="26" cy="176" r="3" fill="#0D9488" />
+      <text x="36" y="180" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Decision Rule:</tspan> a = argmax [ Q(s, STAY), Q(s, LEFT), Q(s, RIGHT) ]</text>
+    </g>
+
+    <!-- Connector 3A -> 3B -->
+    <g transform="translate(230, 251)">
+      <line x1="0" y1="0" x2="0" y2="46" stroke="#0D9488" stroke-width="2" marker-end="url(#arrow-teal)" />
+      <rect x="-80" y="12" width="160" height="20" rx="10" fill="#CCFBF1" stroke="#99F6E4" stroke-width="1" />
+      <text x="0" y="26" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0F766E">Action Dispatch Stream</text>
+    </g>
+
+    <!-- Card 3B: Frame Sync Bridge -->
+    <g transform="translate(20, 302)">
+      <rect x="0" y="0" width="420" height="190" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)" />
+      <path d="M 0 12 A 12 12 0 0 1 12 0 L 408 0 A 12 12 0 0 1 420 12 L 420 6 L 0 6 Z" fill="#14B8A6" />
+      
+      <text x="18" y="30" font-size="14" font-weight="700" fill="#0F172A">Frame Synchronization Bridge</text>
+      
+      <rect x="18" y="42" width="225" height="20" rx="5" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+      <text x="24" y="56" font-size="10" font-weight="600" fill="#334155" class="mono">frontend/src/engine/actionBridge.js</text>
+      <rect x="251" y="42" width="151" height="20" rx="5" fill="#CCFBF1" />
+      <text x="326" y="56" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0D9488">Sync Controller</text>
+
+      <circle cx="26" cy="80" r="3" fill="#14B8A6" />
+      <text x="36" y="84" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Action Repeat Lock:</tspan> Holds chosen action for 4 frames</text>
+
+      <circle cx="26" cy="104" r="3" fill="#14B8A6" />
+      <text x="36" y="108" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Perfect Fidelity:</tspan> Matches training frame-skip exactly</text>
+
+      <circle cx="26" cy="128" r="3" fill="#14B8A6" />
+      <text x="36" y="132" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Kinematic Decoupling:</tspan> Separates physics from rendering</text>
+
+      <circle cx="26" cy="152" r="3" fill="#14B8A6" />
+      <text x="36" y="156" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">State Snapshotting:</tspan> Instantaneous 134D feature capture</text>
+
+      <circle cx="26" cy="174" r="3" fill="#14B8A6" />
+      <text x="36" y="178" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Stability:</tspan> Eliminates jitter with paddle deadzone logic</text>
+    </g>
+
+    <!-- Connector 3B -> 3C -->
+    <g transform="translate(230, 492)">
+      <line x1="0" y1="0" x2="0" y2="46" stroke="#0D9488" stroke-width="2" marker-end="url(#arrow-teal)" />
+      <rect x="-85" y="12" width="170" height="20" rx="10" fill="#CCFBF1" stroke="#99F6E4" stroke-width="1" />
+      <text x="0" y="26" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0F766E">60 FPS Render &amp; Control</text>
+    </g>
+
+    <!-- Card 3C: React 19 Canvas Studio -->
+    <g transform="translate(20, 543)">
+      <rect x="0" y="0" width="420" height="225" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#card-shadow)" />
+      <path d="M 0 12 A 12 12 0 0 1 12 0 L 408 0 A 12 12 0 0 1 420 12 L 420 6 L 0 6 Z" fill="#0D9488" />
+      
+      <text x="18" y="30" font-size="14" font-weight="700" fill="#0F172A">React 19 Canvas Studio &amp; Telemetry</text>
+      
+      <rect x="18" y="42" width="245" height="20" rx="5" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+      <text x="24" y="56" font-size="10" font-weight="600" fill="#334155" class="mono">frontend/src/components/GameCanvas.jsx</text>
+      <rect x="271" y="42" width="131" height="20" rx="5" fill="#CCFBF1" />
+      <text x="336" y="56" text-anchor="middle" font-size="9.5" font-weight="600" fill="#0D9488">Client UI / HUD</text>
+
+      <circle cx="26" cy="80" r="3" fill="#0D9488" />
+      <text x="36" y="84" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">HTML5 Canvas:</tspan> Smooth 60 FPS requestAnimationFrame loop</text>
+
+      <circle cx="26" cy="104" r="3" fill="#0D9488" />
+      <text x="36" y="108" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Dual Mode:</tspan> Instant toggling: Human Player ↔ Autonomous AI</text>
+
+      <circle cx="26" cy="128" r="3" fill="#0D9488" />
+      <text x="36" y="132" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Live Telemetry HUD:</tspan> Real-time Q-values (Stay, Left, Right)</text>
+
+      <circle cx="26" cy="152" r="3" fill="#0D9488" />
+      <text x="36" y="156" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Performance Metrics:</tspan> FPS monitor, latency (&lt;0.8ms), score</text>
+
+      <circle cx="26" cy="176" r="3" fill="#0D9488" />
+      <text x="36" y="180" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Zero Server Cost:</tspan> Fully client-side; static CDN hosting</text>
+
+      <circle cx="26" cy="200" r="3" fill="#0D9488" />
+      <text x="36" y="204" font-size="11.5" font-weight="500" fill="#334155"><tspan font-weight="600">Reactive UI:</tspan> Real-time state synchronizer in React 19</text>
+    </g>
+  </g>
+
+  <!-- BOTTOM PARITY LOOP: PROVING 100% SIM-TO-SIM PARITY (X: 40, W: 1600) -->
+  <g transform="translate(40, 910)">
+    <rect x="0" y="0" width="1600" height="85" rx="14" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="8 4" />
+    
+    <rect x="22" y="20" width="170" height="45" rx="8" fill="#0F172A" />
+    <text x="107" y="40" text-anchor="middle" font-size="11" font-weight="700" fill="#38BDF8">GUARANTEED PARITY</text>
+    <text x="107" y="55" text-anchor="middle" font-size="9.5" font-weight="600" fill="#94A3B8">ZERO PHYSICS GAP</text>
+
+    <text x="215" y="38" font-size="13.5" font-weight="700" fill="#1E293B">
+      Bidirectional Physics Parity Assurance Loop:
+      <tspan font-weight="400" fill="#475569"> The browser client executes the exact same underlying JavaScript engine </tspan>
+      <tspan font-family="JetBrains Mono" font-size="11.5" font-weight="600" fill="#0284C7">(frontend/src/engine/rlEnvironment.js)</tspan>
+    </text>
+    <text x="215" y="60" font-size="12" font-weight="400" fill="#64748B">
+      that was invoked under headless Node.js during reinforcement learning training. This architectural unification completely eliminates the classical sim-to-sim gap.
+    </text>
+
+    <rect x="1425" y="26" width="150" height="34" rx="6" fill="#E0F2FE" stroke="#BAE6FD" stroke-width="1" />
+    <text x="1500" y="48" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0284C7">100% IDENTICAL</text>
+  </g>
+
+</svg>
