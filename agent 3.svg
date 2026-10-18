@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 651.8757499999999 1067.1999999999998" width="651.8757499999999" height="1067.1999999999998" style="--bg:#1F1F1F;--fg:#CCCCCC;--line:#CCCCCC;--accent:#0078D4;--muted:#CCCCCCCC;--surface:#181818;--border:#CCCCCC;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="IN" data-to="PREP" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="328.99449999999996,110.7 328.99449999999996,158.7" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="PREP" data-to="CNN" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Grid: 3×16×16" points="287.91683333333333,212.5 287.91683333333333,248.5 179.90549999999996,248.5 179.90549999999996,328.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="PREP" data-to="KIN" data-style="solid" data-arrow-start="false" data-arrow-end="true" data-label="Kinematics: 6-D" points="370.07216666666665,212.5 370.07216666666665,248.5 478.08349999999996,248.5 478.0834999999999,328.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CNN" data-to="FUSION" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="179.9055,399.5 179.9055,423.5 328.9945,423.5 328.9945,447.5" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="KIN" data-to="FUSION" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="478.0834999999999,399.5 478.0834999999999,423.5 328.9945,423.5 328.9945,447.5" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="FUSION" data-to="VAL" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="328.9945,501.3 328.9945,525.3000000000001 187.13025000000005,525.3000000000001 187.13025000000005,549.3000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="FUSION" data-to="ADV" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="328.9945,501.3 328.9945,525.3000000000001 470.85874999999993,525.3000000000001 470.85874999999993,549.3000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="VAL" data-to="COMBINE" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="187.13025000000005,603.1 187.13025000000005,627.1 328.9945,627.1 328.9945,651.1" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="ADV" data-to="COMBINE" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="470.85874999999993,603.1 470.85874999999993,627.1 328.9945,627.1 328.9945,651.1" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="COMBINE" data-to="PROBS" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="328.99449999999996,721.8000000000001 328.99449999999996,769.8000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="PROBS" data-to="QVALS" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="328.99449999999996,823.6 328.99449999999996,871.6" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="QVALS" data-to="ACT" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="328.99449999999996,925.4 328.99449999999996,973.4" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="edge-label" data-from="PREP" data-to="CNN" data-label="Grid: 3×16×16">
+  <rect x="141.4055" y="255.49999999999997" width="76.456" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="179.6335" y="270.65" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Grid: 3×16×16</text>
+</g>
+<g class="edge-label" data-from="PREP" data-to="KIN" data-label="Kinematics: 6-D">
+  <rect x="433.58349999999996" y="255.49999999999997" width="88.93000000000002" height="30.3" rx="2" ry="2" fill="var(--bg)" stroke="var(--_inner-stroke)" stroke-width="1" />
+  <text x="478.0485" y="270.65" text-anchor="middle" font-size="11" font-weight="400" fill="var(--_text-sec)" dy="3.8499999999999996">Kinematics: 6-D</text>
+</g>
+<g class="node" data-id="IN" data-label="&lt;b&gt;Input State Vector&lt;/b&gt; (134-D)
+• 6 Kinematics (paddle, ball x/y, velocities, brick ratio)
+• 128 Bricks (8×16 brick grid states)" data-shape="rectangle">
+  <rect x="155.0030000000001" y="40" width="347.9829999999998" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="328.9945" y="75.35" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="328.9945" dy="-12.350000000000001"><tspan font-weight="bold">Input State Vector</tspan> (134-D)</tspan><tspan x="328.9945" dy="16.900000000000002">• 6 Kinematics (paddle, ball x/y, velocities, brick ratio)</tspan><tspan x="328.9945" dy="16.900000000000002">• 128 Bricks (8×16 brick grid states)</tspan></text>
+</g>
+<g class="node" data-id="PREP" data-label="&lt;b&gt;state_to_spatial_grid()&lt;/b&gt;
+Splits input into two representations" data-shape="rectangle">
+  <rect x="205.7615" y="158.7" width="246.46599999999998" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="328.9945" y="185.6" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="328.9945" dy="-3.9000000000000012"><tspan font-weight="bold">state_to_spatial_grid()</tspan></tspan><tspan x="328.9945" dy="16.900000000000002">Splits input into two representations</tspan></text>
+</g>
+<g class="node" data-id="CNN" data-label="&lt;b&gt;Spatial CNN Stream&lt;/b&gt; (self.conv)
+• 3×16×16 Grid → 3× Conv2D + 2× MaxPool
+• Dense Layer → &lt;b&gt;128-D Feature Vector&lt;/b&gt;" data-shape="rectangle">
+  <rect x="40" y="328.8" width="279.811" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="179.9055" y="364.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="179.9055" dy="-12.350000000000001"><tspan font-weight="bold">Spatial CNN Stream</tspan> (self.conv)</tspan><tspan x="179.9055" dy="16.900000000000002">• 3×16×16 Grid → 3× Conv2D + 2× MaxPool</tspan><tspan x="179.9055" dy="16.900000000000002">• Dense Layer → <tspan font-weight="bold">128-D Feature Vector</tspan></tspan></text>
+</g>
+<g class="node" data-id="KIN" data-label="&lt;b&gt;Kinematics Stream&lt;/b&gt; (self.kin_net)
+• 6-D Vector → 2× Dense (64) + ReLU
+• Dense Layer → &lt;b&gt;64-D Feature Vector&lt;/b&gt;" data-shape="rectangle">
+  <rect x="347.8109999999999" y="328.8" width="260.54499999999996" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="478.0834999999999" y="364.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="478.0834999999999" dy="-12.350000000000001"><tspan font-weight="bold">Kinematics Stream</tspan> (self.kin_net)</tspan><tspan x="478.0834999999999" dy="16.900000000000002">• 6-D Vector → 2× Dense (64) + ReLU</tspan><tspan x="478.0834999999999" dy="16.900000000000002">• Dense Layer → <tspan font-weight="bold">64-D Feature Vector</tspan></tspan></text>
+</g>
+<g class="node" data-id="FUSION" data-label="&lt;b&gt;Feature Concatenation&lt;/b&gt;
+Combined Vector: &lt;b&gt;192-D&lt;/b&gt;" data-shape="rectangle">
+  <rect x="240.21800000000002" y="447.5" width="177.55299999999997" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="328.9945" y="474.4" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="328.9945" dy="-3.9000000000000012"><tspan font-weight="bold">Feature Concatenation</tspan></tspan><tspan x="328.9945" dy="16.900000000000002">Combined Vector: <tspan font-weight="bold">192-D</tspan></tspan></text>
+</g>
+<g class="node" data-id="VAL" data-label="&lt;b&gt;Value Stream V(s)&lt;/b&gt; (NoisyLinear)
+192 → 128 → &lt;b&gt;51 Atom Logits&lt;/b&gt;" data-shape="rectangle">
+  <rect x="72.41875000000005" y="549.3000000000001" width="229.42299999999997" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="187.13025000000005" y="576.2" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="187.13025000000005" dy="-3.9000000000000012"><tspan font-weight="bold">Value Stream V(s)</tspan> (NoisyLinear)</tspan><tspan x="187.13025000000005" dy="16.900000000000002">192 → 128 → <tspan font-weight="bold">51 Atom Logits</tspan></tspan></text>
+</g>
+<g class="node" data-id="ADV" data-label="&lt;b&gt;Advantage Stream A(s, a)&lt;/b&gt; (NoisyLinear)
+192 → 128 → &lt;b&gt;153 Logits&lt;/b&gt; (3 Actions × 51 Atoms)" data-shape="rectangle">
+  <rect x="329.84175" y="549.3000000000001" width="282.0339999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="470.85874999999993" y="576.2" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="470.85874999999993" dy="-3.9000000000000012"><tspan font-weight="bold">Advantage Stream A(s, a)</tspan> (NoisyLinear)</tspan><tspan x="470.85874999999993" dy="16.900000000000002">192 → 128 → <tspan font-weight="bold">153 Logits</tspan> (3 Actions × 51 Atoms)</tspan></text>
+</g>
+<g class="node" data-id="COMBINE" data-label="&lt;b&gt;Dueling Aggregation per Atom&lt;/b&gt;
+q_logits = V(s) + (A(s, a) - mean(A))
+Shape: &lt;b&gt;(3 Actions, 51 Atoms)&lt;/b&gt;" data-shape="rectangle">
+  <rect x="211.6895" y="651.1" width="234.60999999999999" height="70.7" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="328.9945" y="686.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="328.9945" dy="-12.350000000000001"><tspan font-weight="bold">Dueling Aggregation per Atom</tspan></tspan><tspan x="328.9945" dy="16.900000000000002">q_logits = V(s) + (A(s, a) - mean(A))</tspan><tspan x="328.9945" dy="16.900000000000002">Shape: <tspan font-weight="bold">(3 Actions, 51 Atoms)</tspan></tspan></text>
+</g>
+<g class="node" data-id="PROBS" data-label="&quot;&lt;b&gt;Distributional Softmax&lt;/b&gt; (C51)
+Categorical Probabilities over 51 Support Atoms [-30, +150" data-shape="rectangle">
+  <rect x="143.14700000000005" y="769.8000000000001" width="371.6949999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="328.9945" y="796.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="328.9945" dy="-3.9000000000000012">&quot;<tspan font-weight="bold">Distributional Softmax</tspan> (C51)</tspan><tspan x="328.9945" dy="16.900000000000002">Categorical Probabilities over 51 Support Atoms [-30, +150</tspan></text>
+</g>
+<g class="node" data-id="QVALS" data-label="&quot;&lt;b&gt;Expected Q-Values&lt;/b&gt; (Dot Product with Support)
+Q(s, a) = Σ (p_i × z_i) → &lt;b&gt;[Q_left, Q_stay, Q_right" data-shape="rectangle">
+  <rect x="173.52800000000002" y="871.6" width="310.9329999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="328.99449999999996" y="898.5" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="328.99449999999996" dy="-3.9000000000000012">&quot;<tspan font-weight="bold">Expected Q-Values</tspan> (Dot Product with Support)</tspan><tspan x="328.99449999999996" dy="16.900000000000002">Q(s, a) = Σ (p_i × z_i) → <tspan font-weight="bold">[Q_left, Q_stay, Q_right</tspan></tspan></text>
+</g>
+<g class="node" data-id="ACT" data-label="&lt;b&gt;Action Output&lt;/b&gt; (argmax)
+&lt;b&gt;0: LEFT | 1: STAY | 2: RIGHT&lt;/b&gt;" data-shape="rectangle">
+  <rect x="229.103" y="973.4" width="199.78299999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="328.9945" y="1000.3" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="328.9945" dy="-3.9000000000000012"><tspan font-weight="bold">Action Output</tspan> (argmax)</tspan><tspan x="328.9945" dy="16.900000000000002"><tspan font-weight="bold">0: LEFT | 1: STAY | 2: RIGHT</tspan></tspan></text>
+</g>
+</svg>
