@@ -1,0 +1,11 @@
+===========================================================================
+BREAKOUT EVALUATION REPORT
+• Model Evaluated: D:\RL PROJECT\rl-catch-game\agents\agent2_cnn_dqn\checkpoints\best_model.pth
+• Evaluation Episodes: 1 (Greedy Policy: epsilon=0.01)
+---------------------------------------------------------------------------
+• Mean Episode Reward: 92.87 ± 0.00
+• Mean Game Score:     40.0 points
+• Mean Bricks Cleared: 3.0 / 88 (3.4%)
+• Stage Win Rate:      0.0% (0/1 wins)
+• Max Reward Achieved: 92.87
+===========================================================================
