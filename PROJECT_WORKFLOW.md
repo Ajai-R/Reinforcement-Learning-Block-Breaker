@@ -40,12 +40,13 @@ rl-catch-game/
 │   │   ├── checkpoints/best_model.pth  # Peak checkpoint (Ep 535 / 1698 avg)
 │   │   └── logs/training_log.txt       # Complete 1,500-episode training log
 │   │
-│   └── agent3_ppo/                     # Agent 3: Spatial CNN-PPO (Actor-Critic)
-│       ├── model.py                    # SpatialActorCritic (3x16x16 Conv2D + Kinematics)
-│       ├── train.py                    # CNN-PPO loop with GAE, KL early exit & peak protection
-│       ├── export.py                   # Spatial CNN-PPO web JSON exporter
-│       ├── checkpoints/                # PPO model checkpoints (best_model.pth, final_model.pth)
-│       └── logs/                       # PPO training logs (1,891 episodes)
+│   └── agent3_rainbow_dqn/             # Agent 3: Distributional Rainbow DQN (C51 + PER)
+│       ├── model.py                    # RainbowDuelingC51Network (Spatial CNN + Kinematics + NoisyNet)
+│       ├── train.py                    # Multi-step distributional Rainbow loop with PER & soft resets
+│       ├── export.py                   # C51 atom distribution web JSON exporter
+│       ├── prioritized_replay.py       # Binary SumTree & MinTree Prioritized Experience Replay buffer
+│       ├── checkpoints/                # Model checkpoints (model_weights_rainbow.json)
+│       └── logs/                       # Training logs (training_log.txt - 850 episodes)
 │
 ├── training/                           # Shared Environment Bridge & Evaluation Utilities
 │   ├── node_env_runner.js              # Headless Node.js subprocess exposing rlEnvironment.js over stdio IPC

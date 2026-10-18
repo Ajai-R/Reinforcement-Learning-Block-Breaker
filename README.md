@@ -36,7 +36,7 @@ This project implements, trains, benchmarks, and deploys three distinct architec
 ### 3. Agent 3: Distributional Rainbow DQN (C51 + PER + Multi-Step)
 - **Directory**: `agents/agent3_rainbow_dqn/`
 - **Algorithm Enhancements**:
-  - **Distributional RL (C51)**: Instead of estimating scalar $Q(s, a)$, models the probability distribution of returns over 51 discrete atoms across $[-150.0, 1000.0]$.
+  - **Distributional RL (C51)**: Instead of estimating scalar $Q(s, a)$, models the probability distribution of returns over 51 discrete atoms across $[-30.0, 150.0]$.
   - **Prioritized Experience Replay (PER)**: Proportional prioritization with SumTree for efficient $O(\log N)$ updates of high TD-error transitions.
   - **Multi-Step Returns ($n$-step = 3)**: Accelerates temporal credit assignment from delayed brick hits back to paddle deflections.
   - **NoisyNet Exploration**: Factorized Gaussian parameter noise replacing heuristic $\epsilon$-greedy schedules.
